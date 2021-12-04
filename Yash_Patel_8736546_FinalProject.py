@@ -53,4 +53,6 @@ if Player_dec == "0" and Computer_dec == 2:
   print("You Win, WELDONE:)")
 elif Player_dec == "2" and Computer_dec == 1:
   print("You Win, WELDONE:)")
+elif Player_dec == "1" and Computer_dec == 0:
+  print("You Win, WELDONE:)")
 
