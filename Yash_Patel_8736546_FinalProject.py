@@ -30,29 +30,39 @@ scissors = '''
 import random
 #used random command which generates random number.
 
-Player_dec = input("\nWhat do you choose? 0 for Rock, 1 for Paper or 2 for Scissors: ")
-if Player_dec == "0":
-  print(f"You Choose: Rock \n{rock}")
-elif Player_dec == "1":
-  print(f"You Choose: Paper \n{paper}")
-elif Player_dec == "2":
-  print(f"You Choose: Scissor \n {scissors}")
-else:
-  print("Invalid Number")
-  
-Computer_dec = random.randint(0, 2)
+class Player:
+    def __init__(self, player_dec):
+        self.player_dec = player_dec
+
+    Player_dec = input("\nWhat do you choose? 0 for Rock, 1 for Paper or 2 for Scissors: ")
+    if Player_dec == "0":
+        print(f"You Choose: Rock \n{rock}")
+    elif Player_dec == "1":
+        print(f"You Choose: Paper \n{paper}")
+    elif Player_dec == "2":
+        print(f"You Choose: Scissor \n {scissors}")
+    else:
+        print("Invalid Number")
+    def Computer_dec(self,computer_dec):
+
+        self.computer_dec = computer_dec
+    computer_dec = random.randint(0, 2)
 # print(Computer_dec)
-if Computer_dec == 0:
-  print(f"Computer Choose: Rock\n{rock}")
-elif Computer_dec == 1:
-  print(f"Computer Choose: Paper\n{paper}")
-elif Computer_dec == 2:
-  print(f"Computer Choose: Scissor\n{scissors}")
+    if computer_dec == 0:
+        print(f"Computer Choose: Rock\n{rock}")
+    elif computer_dec == 1:
+        print(f"Computer Choose: Paper\n{paper}")
+    elif computer_dec == 2:
+        print(f"Computer Choose: Scissor\n{scissors}")
 
-if Player_dec == "0" and Computer_dec == 2:
-  print("You Win, WELDONE:)")
-elif Player_dec == "2" and Computer_dec == 1:
-  print("You Win, WELDONE:)")
-elif Player_dec == "1" and Computer_dec == 0:
-  print("You Win, WELDONE:)")
-
+    if Player_dec == "0" and Computer_dec == 2:
+        print("You Win, WELDONE:)")
+    elif Player_dec == "2" and Computer_dec == 1:
+        print("You Win, WELDONE:)")
+    elif Player_dec == "1" and Computer_dec == 0:
+        print("You Win, WELDONE:)")
+    elif Player_dec == "0" and Computer_dec == 0:
+        print("its a Draw")
+    elif Player_dec == "1" and Computer_dec == 1:
+        print("its a Draw")
+    
