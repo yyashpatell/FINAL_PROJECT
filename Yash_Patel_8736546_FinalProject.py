@@ -67,4 +67,6 @@ class Player:
         print("its a Draw")
     elif Player_dec == "2" and Computer_dec == 2:
         print("its a Draw")
+    else:
+        print("You Loose, HARD LUCK:( . LETS PLAY AGAIN>>>HIT F5")
 
