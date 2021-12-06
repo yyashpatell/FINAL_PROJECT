@@ -65,4 +65,6 @@ class Player:
         print("its a Draw")
     elif Player_dec == "1" and Computer_dec == 1:
         print("its a Draw")
-    
+    elif Player_dec == "2" and Computer_dec == 2:
+        print("its a Draw")
+
